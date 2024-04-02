@@ -1,0 +1,342 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+    color: #024d6c;
+}
+
+header {
+    background-color: #fff;
+    /*
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(245,245,245,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(245,245,245,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(245,245,245,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#f5f5f5",GradientType=1);
+    */
+    padding: 50px;
+    
+    text-align: center;
+    color: #024d6c;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #024d6c;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.advantage-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advantage-list li {
+    margin-bottom: 10px;
+}
+
+.community-section {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d6251f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a3181a;
+}
+
+
+/*footer*/
+
+.footer {
+background-color: #024d6c; /* Adjust the background color as needed */
+color: #ffffff;
+padding: 20px;
+text-align: center;
+}
+
+.footer h2 {
+font-size: 20px;
+margin-bottom: 15px;
+}
+
+.contact-info {
+max-width: 300px;
+margin: 0 auto;
+}
+
+.contact-info div {
+margin-bottom: 15px;
+}
+
+.contact-info i {
+font-size: 18px;
+margin-right: 8px;
+}
+
+.social-icons {
+margin-top: 15px;
+}
+
+.social-icons a {
+display: inline-block;
+margin: 0 8px;
+color: #ffffff;
+font-size: 18px;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+color: #f0f0f0; /* Adjust the hover color as needed */
+}
+
+/*Social proof*/
+
+.social-proof-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #024d6c;
+}
+
+.team-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-members-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 150px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 3px solid #024d6c;
+}
+
+.team-member h3 {
+    font-size: 16px;
+    color: #024d6c;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+}
+
+.hero-section {
+    position: relative;
+    width: 80%;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden; /* Hide the overflow to prevent unwanted scrollbars */
+}
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #70110e, #a3181a, #8f1416, #a3181a, #70110e); /* Adjust the colors and variations as needed */
+    background-size: 200% 200%;
+    animation: flareAnimation 8s infinite alternate; /* Adjust the duration and other properties as needed */
+}
+
+@keyframes flareAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.hero-content {
+    z-index: 1;
+    position: relative;
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the background color as needed */
+    color: #70110e; /* Adjust the text color as needed */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the hover background color as needed */
+}
+
+.whatsapp-icon {
+    margin-right: 10px;
+    color: #70110e; /* Set the color of the WhatsApp icon */
+}
+
+.instructions-section{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
+.responsive-qr-code {
+    max-width: 200px;    
+    width: 100%;
+}
+
+.responsive-banner{
+    max-width: 300px;
+    width: 100%;
+}
+
+.quote-text
+{
+    font-weight: lighter;
+    font-style: italic;
+    color: #024d6c;
+}
+
+.logo-app{
+    background-color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.app-download-section{
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.app-download-icon{
+    max-height: 50px;
+}

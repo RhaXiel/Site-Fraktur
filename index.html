@@ -1,115 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fraktur</title>
+    <meta
+      name="description"
+      content="Fraktur es tu compañero en emergencias de fracturas. Ofrecemos servicio de emergencia para fracturas."
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-    <link rel="stylesheet" href="./styles.css">
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5SZJ7Z5R");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WNXXQF3JYE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-    <style>
-        
-    </style>
-</head>
-<body>
+      gtag("config", "G-WNXXQF3JYE");
+    </script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5SZJ7Z5R"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
-        <img src="./Logo-Fraktur-min.png" alt="logo fraktur">
-        <!-- <p>Lorem ipsum - slogan</p> -->
+      <img
+        src="./images/Logo-Fraktur-Banner.png"
+        class="responsive-banner"
+        alt="logo fraktur"
+      />
     </header>
 
     <section class="hero-section">
-        <div class="animated-background"></div>
-        <div class="hero-content">
-            <h1>Fraktur es tu compañero en emergencias de fracturas</h1>
-            <p>Ofrecemos servicio de emergencia para fracturas.</p>
-            <a href="https://wa.me/1234567890" class="whatsapp-button">
-                <i class="fab fa-whatsapp whatsapp-icon"></i> Contáctenos vía whatsapp
-            </a>
-        </div>
+      <div class="animated-background"></div>
+      <div class="hero-content">
+        <img src="./images/Logo-App.png" class="logo-app" alt="logo fraktur" />
+        <h1>Fraktur es tu compañero en emergencias de fracturas</h1>
+        <p>Ofrecemos servicio de emergencia para fracturas.</p>
+        <a href="https://wa.me/1234567890" class="whatsapp-button">
+          <i class="fab fa-whatsapp whatsapp-icon"></i> Contáctenos vía whatsapp
+        </a>
+      </div>
     </section>
 
-    <section>
-        <h2>Somos un servicio de emergencias de fracturas</h2>
-        <p>Estamos presentes en las tiendas de aplcaciones principales.</p>
+    <section class="centered-text">
+      <h2>Cómo funciona</h2>
 
-        <h2>Cómo funciona:</h2>
-        <ul class="advantage-list">
-            <li>Haces el paso 1...</li>
-            <li>Luego en el paso 2...</li>
-            <li>Finalmente en el paso 3...</li>
-        </ul>
+      <div class="instructions-section">
+        <div class="column">
+          <img
+            src="./images/qr_video_pacientes.png"
+            class="responsive-qr-code"
+            alt="QR Code pacientes"
+          />
+          <h3>Si eres paciente</h3>
+          <p>Puedes consultar nuestra guía para pacientes de Fraktur.</p>
+        </div>
+
+        <div class="column">
+          <img
+            src="./images/qr_video_pacientes.png"
+            class="responsive-qr-code"
+            alt="QR Code médicos"
+          />
+          <h3>Si eres médico especialista</h3>
+          <p>Contamos con oportunidades para atención de emergencias.</p>
+        </div>
+      </div>
+      <ul class="advantage-list">
+        <q class="quote-text"
+          >En fraktur nos encargamos de todo el proceso de atención de
+          emergencias de fracturas.</q
+        >
+      </ul>
     </section>
 
     <section class="community-section">
-        <h2>¿Eres médico especialista en ortopedia?</h2>
-        <p>Creemos que podría interesarte trabajar con nosotros</p>
-        <a href="#" class="cta-button">Contacto de afiliados</a>
+      <h2>¿Eres médico especialista en ortopedia?</h2>
+      <p>Creemos que podría interesarte trabajar con nosotros</p>
+      <a
+        href="https://forms.gle/hbt7tKeL3dxM5ysy6"
+        target="_blank"
+        class="cta-button"
+        >Contacto de afiliados</a
+      >
     </section>
 
     <section class="team-section">
-        <h2 style="color: #024d6c;">Nuestro equipo de especialistas</h2>
+      <h2 style="color: #024d6c">Nuestro equipo de especialistas</h2>
 
-    <div class="team-members-container">
+      <div class="team-members-container">
         <div class="team-member">
-            <img src="https://via.placeholder.com/100" alt="Team Member Photo">
-            <h3>Dr. Nombre apellido</h3>
-            <p>Ortopeda</p>
+          <img src="https://via.placeholder.com/100" alt="Team Member Photo" />
+          <h3>Dr. Nombre apellido</h3>
+          <p>Ortopeda</p>
         </div>
 
         <div class="team-member">
-            <img src="https://via.placeholder.com/100" alt="Team Member Photo">
-            <h3>Dra. Nombre apellido</h3>
-            <p>Ortopeda</p>
+          <img src="https://via.placeholder.com/100" alt="Team Member Photo" />
+          <h3>Dra. Nombre apellido</h3>
+          <p>Ortopeda</p>
         </div>
 
         <div class="team-member">
-            <img src="https://via.placeholder.com/100" alt="Team Member Photo">
-            <h3>Dr. Nombre apellido</h3>
-            <p>Ortopeda</p>
+          <img src="https://via.placeholder.com/100" alt="Team Member Photo" />
+          <h3>Dr. Nombre apellido</h3>
+          <p>Ortopeda</p>
         </div>
-    </div>
-
+      </div>
     </section>
-
 
     <section class="social-proof-section">
-        <h2 style="color: #024d6c;">Testimonios</h2>
+      <h2 style="color: #024d6c">Testimonios</h2>
 
-        <div class="testimonial">
-            <img src="https://via.placeholder.com/100" alt="Profile Photo">
-            <p>"Me atendieron en una emergencia y todo fue más sencillo"</p>
-            <cite>- Cliente Apellido., Cliente satisfecho</cite>
-        </div>
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo" />
+        <p>"Me atendieron en una emergencia y todo fue más sencillo"</p>
+        <cite>- Cliente Apellido., Cliente satisfecho</cite>
+      </div>
 
-        <div class="testimonial">
-            <img src="https://via.placeholder.com/100" alt="Profile Photo">
-            <p>"Igual de rápido que tuve mi emergencia, así de rápido encontré una solución con Fraktur."</p>
-            <cite>- Cliente Apellido., Asociado</cite>
-        </div>
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo" />
+        <p>
+          "Igual de rápido que tuve mi emergencia, así de rápido encontré una
+          solución con Fraktur."
+        </p>
+        <cite>- Cliente Apellido., Asociado</cite>
+      </div>
 
-        <div class="testimonial">
-            <img src="https://via.placeholder.com/100" alt="Profile Photo">
-            <p>"Mi hijo se quebró en su práctica deportiva no teniamos a quien contactar, Fraktur fue la solución"</p>
-            <cite>- Cliente Apellido., Padre de familia</cite>
-        </div>
+      <div class="testimonial">
+        <img src="https://via.placeholder.com/100" alt="Profile Photo" />
+        <p>
+          "Mi hijo se quebró en su práctica deportiva no teniamos a quien
+          contactar, Fraktur fue la solución"
+        </p>
+        <cite>- Cliente Apellido., Padre de familia</cite>
+      </div>
     </section>
 
-    
+    <section class="centered-text">
+      <h1>Somos un servicio de emergencias de fracturas</h1>
+      <p>Estamos presentes en las principales tiendas de aplicaciones.</p>
+      <div class="app-download-section">
+        <div class="column">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.fraktur"
+            target="_blank"
+          >
+            <img
+              src="./images/google-play-badge.png"
+              class="app-download-icon"
+              alt="fraktur play store"
+            />
+          </a>
+        </div>
+        <div class="column">
+          <a
+            href="https://apps.apple.com/us/app/fraktur/id1234567890"
+            target="_blank"
+          >
+            <img
+              src="./images/Download_on_the_App_Store_Badge_ESMX_RGB_blk_100217.svg"
+              class="app-download-icon"
+              alt="fraktur app store"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
-        
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-        <p>&copy; 2024 Fraktur. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 Fraktur. Todos los derechos reservados.</p>
     </footer>
-
-</body>
+  </body>
 </html>
